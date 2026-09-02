@@ -349,15 +349,70 @@ function buildPostPage(title, dateDisplay, bodyHtml, imagePath) {
 </head>
 <body>
 <header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="../index.html">
-      <img src="../assets/img/spct-logo.png" alt="Stormwater Planning Training" width="34" height="35">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/spct-logo.png" alt="Stormwater Planning Training (stormwaterplanning.us)" class="logo-icon">
+      <span class="logo-text">
+        <span class="logo-mark">stormwaterplanning.us</span>
+        <span class="logo-sub">Stormwater Planning Training</span>
+      </span>
     </a>
-    <nav>
-      <a href="../index.html">Blog</a>
-      <a href="https://stormwaterplanning.us">Main Site</a>
-      <a href="https://stormwaterplanning.us/contact/">Contact Us</a>
+
+    <nav class="main-nav" id="mainNav">
+      <div class="nav-group">
+        <span class="nav-group-label">Blog</span>
+        <a href="../index.html">Blog Home</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Courses</span>
+        <a href="https://stormwaterplanning.us/qualified-swppp-practitioner-qsp-training/">QSP Practitioner Training</a>
+        <a href="https://stormwaterplanning.us/qualified-swppp-preparer-training/">SWPPP Preparer Training</a>
+        <a href="https://stormwaterplanning.us/#pricing">Pricing &amp; Enroll</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Compliance</span>
+        <a href="https://stormwaterplanning.us/federal-qualified-person-vs-california-qsp-qsd/">Federal vs. California QSP/QSD</a>
+        <a href="https://stormwaterplanning.us/stormwater-regulations-and-standards/">Stormwater Regulations</a>
+        <a href="https://stormwaterplanning.us/state-stormwater-permit-requirements/">State Permit Requirements</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Resources</span>
+        <a href="https://stormwaterplanning.us/how-to-prepare-a-swppp/">SWPPP Preparation</a>
+        <a href="https://stormwaterplanning.us/construction-stormwater-inspection-training/">Stormwater Inspections</a>
+        <a href="https://stormwaterplanning.us/npdes-training-for-construction-sites/">NPDES Training</a>
+        <a href="https://stormwaterplanning.us/swppp-preparer-vs-stormwater-inspector/">Preparer vs. Inspector</a>
+        <a href="https://stormwaterplanning.us/stormwater-bmp-training/">BMP Training</a>
+        <a href="https://stormwaterplanning.us/frequently-asked-questions/">FAQ</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Company</span>
+        <a href="https://stormwaterplanning.us/about/">About</a>
+        <a href="https://stormwaterplanning.us/instructors-and-training-provider/">Instructors &amp; Training Provider</a>
+        <a href="https://stormwaterplanning.us/reviews/">Reviews</a>
+        <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      </div>
+      <div class="nav-contact-group">
+        <a href="tel:18664296742" class="nav-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          1-866-429-6742
+        </a>
+        <a href="mailto:info@hazwoper-osha.com" class="nav-phone nav-email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@hazwoper-osha.com
+        </a>
+      </div>
     </nav>
+
+    <div class="header-actions">
+      <a href="tel:18664296742" class="header-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        1-866-429-6742
+      </a>
+      <a href="https://stormwaterplanning.us/#pricing" class="btn btn-primary btn-sm">Enroll Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -403,6 +458,7 @@ ${bodyHtml}
     <div class="footer-bottom-inner">&copy; <span id="year">${new Date().getFullYear()}</span> Stormwater Planning Training - All Rights Reserved</div>
   </div>
 </footer>
+<script src="../assets/js/nav.js"></script>
 </body>
 </html>
 `;
